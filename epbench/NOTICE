@@ -1,0 +1,25 @@
+EpBench — The Tulving Episodic Memory Benchmark
+================================================
+
+The benchmark, its dataset, and its evaluation harness are the work of:
+
+  Zied Ben Houidi and Alexis Huet (Huawei Technologies France)
+  "The Tulving Episodic Memory Benchmark"
+  Accepted at ICLR 2025.
+  arXiv: 2501.13121
+  Upstream repository: https://github.com/ahstat/episodic-memory-benchmark
+  License: MIT (© 2024-2025 the authors)
+
+This directory does NOT redistribute the upstream dataset (the generated
+"books" and Q&A). To reproduce, obtain the data from the upstream repository
+and its figshare release, then apply the Compresh arm and scripts in `code/`
+(see REPRODUCE.md).
+
+What is original to Compresh here:
+  - the Compresh (TUL 2.0) answering arm and the runner/scoring scripts in
+    `code/` (MIT, © 2026 Compresh Ltd),
+  - the computed results in `results/` and the analysis in this README.
+
+Scores in `results/` are produced with the benchmark's OWN scoring functions
+(epbench.src.evaluation.ranking), so they are directly comparable to the
+numbers published in the upstream repository.
