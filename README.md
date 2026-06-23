@@ -31,6 +31,19 @@ pulls further ahead on multi-event questions. On chronological *ordering*, naive
 RAG currently leads (0.65 vs 0.44) — full breakdown and honest discussion in
 [`epbench/`](epbench/).
 
+## Verify the headline in 10 seconds (no API keys)
+
+```bash
+git clone https://github.com/compresh/compresh-benchmarks
+cd compresh-benchmarks && python3 verify.py
+```
+
+`verify.py` recomputes Simple Recall (the paper method — an unweighted mean over
+the matching-event bins) from the published per-bin recalls and checks it against
+the headline scoreboard. Pure standard library: no install, no keys, no network.
+For the full re-run (calls the models + an independent judge, needs API keys) see
+[`epbench/REPRODUCE.md`](epbench/REPRODUCE.md).
+
 ## Method, in one line
 
 Independent published benchmarks · independent judge · each benchmark's own
