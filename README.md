@@ -29,7 +29,7 @@ Same answerer and judge across arms; the benchmark's own scoring:
 Compresh has the highest Simple Recall **without reading the whole book**, and
 pulls further ahead on multi-event questions. On chronological *ordering*, naive
 RAG currently leads (0.65 vs 0.44) — full breakdown and honest discussion in
-[`epbench/`](epbench/).
+[`epbench/`](epbench/). **Full writeup:** [`epbench/WRITEUP.md`](epbench/WRITEUP.md).
 
 ## Verify the headline in 10 seconds (no API keys)
 

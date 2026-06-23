@@ -5,6 +5,10 @@ Episodic Memory Benchmark, ICLR 2025) measures how well a system can recall
 *episodic* facts — who/what/where/when — from a long generated "book", and
 whether it can place events in the right **chronological** order.
 
+**New here?** Read [`WRITEUP.md`](WRITEUP.md) for the narrative version — savings × quality, the prefix-cache
+cost model, and where Compresh falls short. Or verify the headline in ~10s with no API keys:
+[`../verify.py`](../verify.py).
+
 We add a **Compresh (TUL 2.0)** answering arm and compare it, on the same
 model and the same independent judge, against two baselines the benchmark
 already ships:
